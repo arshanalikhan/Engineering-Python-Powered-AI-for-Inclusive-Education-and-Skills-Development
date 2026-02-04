@@ -1,7 +1,7 @@
-#Engineering Python-Powered AI for Inclusive Education & Skills Development
+# Engineering Python-Powered AI for Inclusive Education & Skills Development
 This repository contains the complete implementation and datasets for the research paper "Engineering Python-Powered AI for Inclusive Education & Skills Development" - a comprehensive Python framework that leverages machine learning for adaptive, inclusive educational systems.
 
-🚀 Overview
+Overview
 The framework combines multiple AI techniques to create personalized learning experiences:
 
 Reinforcement Learning for content sequencing optimization
@@ -25,7 +25,7 @@ Edge Computing Optimization for resource-constrained environments
 
 🗂️ Repository Structure
 text
-├── data/                          # Synthetic datasets from 12-week pilot study
+├── data                          # Synthetic datasets from 12-week pilot study
 │   ├── student_demographics.csv   # 150 student demographic data
 │   ├── weekly_progress_data.csv   # 1,800 weekly progress records
 │   ├── model_performance_comparison.csv
@@ -56,7 +56,8 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-📋 Requirements
+
+ # Requirements
 python
 numpy>=1.21.0
 pandas>=1.3.0
@@ -68,7 +69,8 @@ redis>=4.0.0
 matplotlib>=3.5.0
 seaborn>=0.11.0
 scipy>=1.7.0
-🚦 Quick Start
+
+ Quick Start
 1. Basic Usage
 python
 from src.dynamic_difficulty_adjustment import DynamicDifficultyAdjustment
@@ -112,7 +114,7 @@ optimized_model = optimize_model(
 
 # Save optimized model
 optimized_model.save('models/optimized_model.h5')
-📈 Datasets
+Datasets
 All datasets are synthetically generated based on realistic educational scenarios and include:
 
 Student Demographics (150 students)
@@ -134,7 +136,7 @@ Engagement, retention, and completion metrics
 
 Model size and inference time comparisons
 
-🧠 Core Components
+ Core Components
 Dynamic Difficulty Adjustment
 python
 class DynamicDifficultyAdjustment:
@@ -169,7 +171,7 @@ class CollaborativeFilter:
     def get_recommendations(self, user_id, n_recommendations=5):
         # Generate peer-based recommendations
         pass
-📊 Visualization and Analysis
+ Visualization and Analysis
 The repository includes pre-generated visualizations:
 
 Model Performance Comparison: Bar chart showing engagement, retention, and completion rates
@@ -182,7 +184,7 @@ Generate new visualizations:
 
 python
 python scripts/generate_visualizations.py
-🔌 API Integration
+ API Integration
 RESTful API Endpoints
 Get Learning Recommendations
 bash
@@ -208,7 +210,7 @@ curl -X POST http://localhost:5000/api/v1/progress \
     "time_spent": 1800,
     "error_count": 3
   }'
-🚀 Edge Deployment
+ Edge Deployment
 The framework supports deployment on resource-constrained devices:
 
 Model Optimization
@@ -226,7 +228,7 @@ Progressive sync when connection available
 Reduced bandwidth requirements (optimized for 2G/3G)
 
 
-🤝 Contributing
+Contributing
 We welcome contributions! Please see CONTRIBUTING.md for guidelines.
 
 Development Setup
@@ -240,16 +242,16 @@ python -m pytest tests/
 # Check code style
 flake8 src/
 black src/
-📄 License
+License
 This project is licensed under the MIT License - see LICENSE file for details.
 
-📞 Citation
+Citation
 If you use this work in your research, please cite:
 
 
 
 
-📊 Key Metrics Summary
+ Key Metrics Summary
 Metric	Control Group	AI-Enhanced	Improvement
 Engagement Rate	45%	81%	+80%
 Retention Rate	52%	84%	+62%
